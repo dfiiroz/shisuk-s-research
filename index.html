@@ -1,164 +1,245 @@
 <!doctype html>
 <html lang="en">
-   <head>
-      <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- Bootstrap CSS -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-      <title>Hello, world!</title>
-      <style>
-         .my-class {
-         padding-top: 19px;
-         padding-bottom: 19px;
-         background-color: #c6dbdb !important;
-         width: 100vw;
-         }
-         .my-text {
-         font-weight: 600;
-         text-transform: uppercase;
-         font-size: 30px;
-         letter-spacing: 6px;
-         line-height: 1em;
-         color: #276e7f !important;
-         padding: 20px;
-         }
-         .my-color {
-         color: #276e7f !important;
-         }
-         .my-second-text {
-         font-weight: 500;
-         /* text-transform: uppercase; */
-         font-size: 18px;
-         /* letter-spacing: 1px; */
-         line-height: 1.2rem;
-         color: #276e7f !important;
-         padding: 3px;
-         background-color: transparent;
-         }
-         .accordion-button::after {
-         flex-shrink: 0;
-         width: 1.25rem;
-         height: 1.25rem;
-         margin-left: auto;
-         content: "";
-         background-image: none !important;
-         }
-         .accordion-button:not(.collapsed) {
-         color: #0c63e4;
-         background-color: unset !important;
-         box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
-         }
-         img.img-fluid {
-         width: 300px;
-         height: 300px;
-         }
-         .btn-outline-cs {
-         color: #276e7f !important;
-         border-color: #276e7f !important;
-         }
-         .card-img, .card-img-top {
-         border-top-left-radius: unset;
-         border-top-right-radius: unset;
-         border: 11px solid #2ea3f266;
-         height: 350px;
-         }
-         .card {
-         border: unset;
-         }
-         .card-body a {
-         color: #276e7f;
-         padding: 5px;
-         margin: -7px 0 0 0;
-         display: -webkit-box;
-         height: 110px;
-         overflow: hidden;
-         line-height: normal;
-         }
-      </style>
-   </head>
-   <body>
-      <div class="container-fluid">
-         <div class="row">
-            <div class="col-lg-12 text-center text-uppercase my-class">
-               <div class="my-text">Resources</div>
-            </div>
-         </div>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+  <style>
+    .my-class {
+      padding-top: 19px;
+      padding-bottom: 19px;
+      background-color: #c6dbdb !important;
+      width: 100vw;
+    }
+
+    .my-text {
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 30px;
+      letter-spacing: 6px;
+      line-height: 1em;
+      color: #276e7f !important;
+      padding: 20px;
+    }
+
+    .my-color {
+      color: #276e7f !important;
+    }
+
+    .my-second-text {
+      font-weight: 500;
+      /* text-transform: uppercase; */
+      font-size: 18px;
+      /* letter-spacing: 1px; */
+      line-height: 1.2rem;
+      color: #276e7f !important;
+      padding: 3px;
+      background-color: transparent;
+    }
+
+    .accordion-button::after {
+      flex-shrink: 0;
+      width: 1.25rem;
+      height: 1.25rem;
+      margin-left: auto;
+      content: "";
+      background-image: none !important;
+    }
+
+    .accordion-button:not(.collapsed) {
+      color: #0c63e4;
+      background-color: unset !important;
+      box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
+    }
+
+    img.img-fluid {
+      width: 300px;
+      height: 300px;
+    }
+
+    .btn-outline-cs {
+      color: #276e7f !important;
+      border-color: #276e7f !important;
+    }
+
+    .card-img,
+    .card-img-top {
+      border-top-left-radius: unset;
+      border-top-right-radius: unset;
+      border: 11px solid #2ea3f266;
+      height: 350px;
+    }
+
+    .card {
+      border: unset;
+    }
+
+    .card-body a {
+      color: #276e7f;
+      padding: 5px;
+      margin: -7px 0 0 0;
+      display: -webkit-box;
+      height: 110px;
+      overflow: hidden;
+      line-height: normal;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 text-center text-uppercase my-class">
+        <div class="my-text">Resources</div>
       </div>
-      <div class="container">
-         <div class="row">
-            <div class="col-lg-3">
-               <div class="card mt-4">
-                  <img src="https://finfowe.com/wp-content/uploads/2020/09/PDF.jpg" class="card-img-top" alt="..." title="Impacts of technological interventions on fish
-                     production and biodiversity of seasonal
-                     floodplains in Bangladesh" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
-                  <div class="card-body">
-                     <a href="https://drive.google.com/file/d/1DgHEGUNUxpXdZN2xTzXfbcSC2GppA189/view?usp=sharing" target="_blank" class="d-block text-decoration-none card-link card-title text-center my-second-text pt-3 my-color">Impacts of technological interventions on fish
-                     production and biodiversity of seasonal
-                     floodplains in Bangladesh</a>
-                  </div>
-               </div>
-            </div>
-            <div class="col-lg-3">
-               <div class="card mt-4">
-                  <img src="https://finfowe.com/wp-content/uploads/2020/09/PDF.jpg" class="card-img-top" alt="..." title="Impacts of technological interventions on fish
-                     production and biodiversity of seasonal
-                     floodplains in Bangladesh" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
-                  <div class="card-body">
-                     <a href="https://drive.google.com/file/d/1DgHEGUNUxpXdZN2xTzXfbcSC2GppA189/view?usp=sharing" target="_blank" class="d-block text-decoration-none card-link card-title text-center my-second-text pt-3 my-color">Impacts of technological interventions on fish
-                     production and biodiversity of seasonal
-                     floodplains in Bangladesh</a>
-                  </div>
-               </div>
-            </div>
-            <div class="col-lg-3">
-               <div class="card mt-4">
-                  <img src="https://finfowe.com/wp-content/uploads/2020/09/PDF.jpg" class="card-img-top" alt="..." title="Impacts of technological interventions on fish
-                     production and biodiversity of seasonal
-                     floodplains in Bangladesh" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
-                  <div class="card-body">
-                     <a href="https://drive.google.com/file/d/1DgHEGUNUxpXdZN2xTzXfbcSC2GppA189/view?usp=sharing" target="_blank" class="d-block text-decoration-none card-link card-title text-center my-second-text pt-3 my-color">Impacts of technological interventions on fish
-                     production and biodiversity of seasonal
-                     floodplains in Bangladesh</a>
-                  </div>
-               </div>
-            </div>
-            <div class="col-lg-3">
-               <div class="card mt-4" style="width: 18rem;">
-                  <img src="https://finfowe.com/wp-content/uploads/2020/09/PDF.jpg" class="card-img-top" alt="..." title="Impacts of technological interventions on fish
-                     production and biodiversity of seasonal
-                     floodplains in Bangladesh" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
-                  <div class="card-body">
-                     <a href="https://drive.google.com/file/d/1DgHEGUNUxpXdZN2xTzXfbcSC2GppA189/view?usp=sharing" target="_blank" class="d-block text-decoration-none card-link card-title text-center my-second-text pt-3 my-color">Impacts of technological interventions on fish
-                     production and biodiversity of seasonal
-                     floodplains in Bangladesh</a>
-                  </div>
-               </div>
-            </div>
-         </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row py-4">
+      <div class="col-lg-3">
+        <div class="card mt-4">
+          <img src="https://finfowe.com/wp-content/uploads/2020/09/PDF.jpg" class="card-img-top" alt="..." title="Impacts of technological interventions on fish
+production and biodiversity of seasonal
+floodplains in Bangladesh" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+          <div class="card-body">
+            <a href="https://drive.google.com/file/d/1DgHEGUNUxpXdZN2xTzXfbcSC2GppA189/view?usp=sharing" target="_blank"
+              class="d-block text-decoration-none card-link card-title text-center my-second-text pt-3 my-color">Impacts
+              of technological interventions on fish
+              production and biodiversity of seasonal
+              floodplains in Bangladesh</a>
+          </div>
+        </div>
       </div>
-      <div class="container">
-         <div class="row py-3">
-            <div class="col-lg-12 text-center">
-               <a href="https://www.shisuk.org/" class="btn btn-outline-cs">Back To Home</a>
-            </div>
-         </div>
+      <div class="col-lg-3">
+        <div class="card mt-4">
+          <img src="https://finfowe.com/wp-content/uploads/2020/09/PDF.jpg" class="card-img-top" alt="..." title="Turning Social capital into Natural Capital:
+Changing livelihoods of fishers through CBFM" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+          <div class="card-body">
+            <a href="https://drive.google.com/file/d/1NNP45sbd4fo72LFxscjtOpRCLRhq8v3U/view?usp=sharing" target="_blank"
+              class="d-block text-decoration-none card-link card-title text-center my-second-text pt-3 my-color">Turning
+              Social capital into Natural Capital:
+              Changing livelihoods of fishers through CBFM</a>
+          </div>
+        </div>
       </div>
-      <!-- Optional JavaScript; choose one of the two! -->
-      <!-- Option 1: Bootstrap Bundle with Popper -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-      <script>
-         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-         return new bootstrap.Tooltip(tooltipTriggerEl)
-         })
-      </script>
-      <!-- Option 2: Separate Popper and Bootstrap JS -->
-      <!--
-         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-         -->
-   </body>
+      <div class="col-lg-3">
+        <div class="card mt-4">
+          <img src="https://finfowe.com/wp-content/uploads/2020/09/PDF.jpg" class="card-img-top" alt="..."
+            title="The Role of Social Capital and NGOs in Community Based Management of Openwater Inland Fisheries of Bangladesh*"
+            data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+          <div class="card-body">
+            <a href="https://drive.google.com/file/d/1Zwh3F0tuQdL0c8J8ZFQ6x5cpCk_Rf8cQ/view?usp=sharing" target="_blank"
+              class="d-block text-decoration-none card-link card-title text-center my-second-text pt-3 my-color">The
+              Role of Social Capital and NGOs in Community Based Management of Openwater Inland Fisheries of
+              Bangladesh*</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card mt-4">
+          <img src="https://finfowe.com/wp-content/uploads/2020/09/PDF.jpg" class="card-img-top" alt="..."
+            title="Socio-economic Condition of Fishermen in Seasonal Floodplain Beels in Rajshahi District, Bangladesh"
+            data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+          <div class="card-body">
+            <a href="https://drive.google.com/file/d/1AxuEqlvfJnAZJcuQh9Djjzxwf_cZ-7hj/view?usp=sharing" target="_blank"
+              class="d-block text-decoration-none card-link card-title text-center my-second-text pt-3 my-color">Socio-economic
+              Condition of Fishermen in Seasonal Floodplain Beels in Rajshahi District, Bangladesh</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row py-4">
+      <div class="col-lg-3">
+        <div class="card mt-4">
+          <img src="https://finfowe.com/wp-content/uploads/2020/09/PDF.jpg" class="card-img-top" alt="..."
+            title="Impact of Community Based Fish Culture on Seasonal Floodplain Beel - A Comparative Study"
+            data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+          <div class="card-body">
+            <a href="https://drive.google.com/file/d/1PHsQZdnAbFVBi5LCuvNGTMLGlVp9j36_/view?usp=sharing" target="_blank"
+              class="d-block text-decoration-none card-link card-title text-center my-second-text pt-3 my-color">Impact
+              of Community Based Fish Culture on Seasonal Floodplain Beel - A Comparative Study</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card mt-4">
+          <img src="https://finfowe.com/wp-content/uploads/2020/09/PDF.jpg" class="card-img-top" alt="..." title="A comparative study of two seasonal floodplain
+aquaculture systems in Bangladesh" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+          <div class="card-body">
+            <a href="https://drive.google.com/file/d/1ANPaV_Lxt4omNJ568dFE_ZREqn_0RtmP/view?usp=sharing" target="_blank"
+              class="d-block text-decoration-none card-link card-title text-center my-second-text pt-3 my-color">A
+              comparative study of two seasonal floodplain
+              aquaculture systems in Bangladesh</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card mt-4">
+          <img src="https://finfowe.com/wp-content/uploads/2020/09/PDF.jpg" class="card-img-top" alt="..." title="”Governing the Commons”
+The Evolution of Institutions for Collective Action" data-bs-toggle="tooltip" data-bs-placement="top"
+            title="Tooltip on top">
+          <div class="card-body">
+            <a href="https://drive.google.com/file/d/1KxMvCoMXZ9mMbg3qo1LmFKJPUQPkUwK1/view?usp=sharing" target="_blank"
+              class="d-block text-decoration-none card-link card-title text-center my-second-text pt-3 my-color">”Governing
+              the Commons”
+              The Evolution of Institutions for Collective Action</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card mt-4">
+          <img src="https://finfowe.com/wp-content/uploads/2020/09/PDF.jpg" class="card-img-top" alt="..."
+            title="Daudkandi Model of Community Floodplain Aquaculture in Bangladesh: A Case for Ostrom’s Design Principles"
+            data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+          <div class="card-body">
+            <a href="https://drive.google.com/file/d/1DGjABXClv8Ps_LsAicN-DafKpB1kKLzH/view?usp=sharing" target="_blank"
+              class="d-block text-decoration-none card-link card-title text-center my-second-text pt-3 my-color">Daudkandi
+              Model of Community Floodplain Aquaculture in Bangladesh: A Case for Ostrom’s Design Principles</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row py-3">
+      <div class="col-lg-12 text-center">
+        <a href="https://www.shisuk.org/" class="btn btn-outline-cs">Back To Home</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+  </script>
+
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  </script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
 </html>
